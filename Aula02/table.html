@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <style>
+        thead,
+        tfoot {
+        background-color: #BEADFA;
+        color: #fff;
+        }
+
+        tbody {
+        background-color: #FFF8C9;
+        }
+
+        caption {
+        padding: 10px;
+        caption-side: bottom;
+        }
+
+        table {
+        border-collapse: collapse;
+        border: 2px solid #D0BFFF;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        margin: 20px;
+        }
+
+        td,
+        th {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 5px 10px;
+        text-align: center;
+        }
+
+        .nova thead {
+        background-color: #BEADFA;
+        color: #fff;
+        }
+
+        .nova tbody {
+        background-color: #fff8c98d;
+        }
+
+        .nova table {
+        border-collapse: collapse;
+        border: 2px solid #D0BFFF;
+        width: 100px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        margin: 20px;
+        }
+
+        .nova td {
+        width: 1000px;
+        border: 1px solid  #fff8c98d;
+        padding: 5px 10px;
+        text-align: center;
+        }
+
+        .col {
+            background-color: #BEADFA ;
+            color: #fff;
+            width: 200px;
+        }
+    </style>
+    <table>
+        <thead>
+          <tr>
+            <th>Aluno</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+            <th>Nota 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pedro</td>
+            <td>9.0</td>
+            <td>7.0</td>
+            <td>8.5</td>
+            <td>10.0</td>
+          </tr>
+          <tr>
+            <td>Kaike</td>
+            <td>9.0</td>
+            <td>7.0</td>
+            <td>8.5</td>
+            <td>10.0</td>
+          </tr>
+          <tr>
+            <td>Kalima</td>
+            <td>9.0</td>
+            <td>7.0</td>
+            <td>8.5</td>
+            <td>10.0</td>
+          </tr>
+          <tr>
+            <td>Talitha</td>
+            <td>9.0</td>
+            <td>7.0</td>
+            <td>8.5</td>
+            <td>10.0</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th> </th>
+                <th colspan="2"> Informações</tr>
+                <th> </th>
+                <th> Idade </th>
+                <th>Peso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Homens</td>
+                <td>18</td>
+                <td>67 Kg</td>     
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>89 Kg</td>     
+            </tr>
+            <tr>
+                <td rowspan="2">Mulheres</td>
+                <td>31</td>
+                <td>87 Kg</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>56 Kg</td>
+            </tr>
+        </tbody>
+    </table>
+   
+    <table .class="nova">
+        <thead>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th colspan="2"> Informações</tr>
+                    <th> </th>
+                    <th class="col"> Idade </th>
+                    <th class="col">Peso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="col">Homens</td>
+                    <td>18</td>
+                    <td>67 Kg</td>     
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>89 Kg</td>     
+                </tr>
+                <tr>
+                    <td rowspan="2" class="col">Mulheres</td>
+                    <td>31</td>
+                    <td>87 Kg</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>56 Kg</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>
